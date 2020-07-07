@@ -16,7 +16,7 @@ milk_required = 50 * cups_to_make
 beans_required = 15 * cups_to_make
 
 # print("water required:", water_required, "m")
-# rint("milk required:", milk_required, "ml")
+# print("milk required:", milk_required, "ml")
 # print("beans required", beans_required, "g")
 
 if cups_available > cups_to_make:
