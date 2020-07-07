@@ -23,15 +23,14 @@ while buy_fill_take != "exit":
                 beans_in_machine -= 16
                 money_in_machine += 4
                 disposable_cups_in_machine -= 1
-
-            elif water_in_machine >= 250:
-                print("Sorry, not enough water!\n")
-            elif beans_in_machine >= 16:
-                print("Sorry, not enough coffee!")
-            elif disposable_cups_in_machine >= 1:
-                print("Sorry, not enough cups!")
-            else:
                 print("I have enough resources, making you a coffee!\n")
+
+            elif water_in_machine < 250:
+                print("Sorry, not enough water!\n")
+            elif beans_in_machine < 16:
+                print("Sorry, not enough coffee!")
+            elif disposable_cups_in_machine < 1:
+                print("Sorry, not enough cups!")
 
 
         elif what_drink == "2":
@@ -41,6 +40,7 @@ while buy_fill_take != "exit":
                 beans_in_machine -= 20
                 money_in_machine += 7
                 disposable_cups_in_machine -= 1
+                print("I have enough resources, making you a coffee!\n")
 
             elif water_in_machine < 350:
                 print("Sorry, not enough water!\n")
@@ -50,8 +50,8 @@ while buy_fill_take != "exit":
                 print("Sorry, not enough coffee!")
             elif disposable_cups_in_machine < 1:
                 print("Sorry, not enough cups!")
-            else:
-                print("I have enough resources, making you a coffee!\n")
+
+
 
 
         elif what_drink == "3":
@@ -62,17 +62,16 @@ while buy_fill_take != "exit":
                 beans_in_machine -= 12
                 money_in_machine += 6
                 disposable_cups_in_machine -= 1
-
-            elif water_in_machine >= 200:
-                print("Sorry, not enough water!\n")
-            elif milk_in_machine >= 100:
-                print("Sorry, not enough milk!")
-            elif beans_in_machine >= 12:
-                print("Sorry, not enough coffee!")
-            elif disposable_cups_in_machine >= 1:
-                print("Sorry, not enough cups!")
-            else:
                 print("I have enough resources, making you a coffee!\n")
+
+            elif water_in_machine < 200:
+                print("Sorry, not enough water!\n")
+            elif milk_in_machine < 100:
+                print("Sorry, not enough milk!")
+            elif beans_in_machine < 12:
+                print("Sorry, not enough coffee!")
+            elif disposable_cups_in_machine < 1:
+                print("Sorry, not enough cups!")
 
 
 
